@@ -708,6 +708,10 @@ nav a:hover {
   resize: none;
 }
 
+textarea {
+  height: 200px;
+}
+
 .contact-form button {
   font-weight: 500;
   color: var(--primary-bg);
@@ -855,6 +859,7 @@ nav a:hover {
   /* ******* HOME MQ ******* */
 
   #home {
+    min-height: 100svh;
     overflow-y: hidden;
   }
 
