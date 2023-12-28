@@ -160,7 +160,6 @@ nav a:hover {
 .menu-lang option {
   font-size: 14px;
   font-weight: 500;
-  line-height: 32px;
   padding: 0 25px 0 12px;
   border-radius: 6px;
 }
@@ -1054,6 +1053,24 @@ input[type="submit"]:disabled {
   }
 
   .tech-stack h2 {
-    font-size: 1rem;
+    font-size: 1.2rem;
+  }
+
+  .about-text h2{
+    font-size: 2.5rem;
+    line-height: 2rem;
+  }
+
+  .experience-content h2 {
+    font-size: 2.5rem;
+  }
+
+  .contact-text h2 {
+    font-size: 2.5rem;
+    line-height: 2rem;
+  }
+
+  .menu-lang-container-hidden {
+    visibility: visible;
   }
 }
