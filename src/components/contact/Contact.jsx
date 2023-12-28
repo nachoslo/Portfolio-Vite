@@ -1,6 +1,6 @@
 import { useContext, useRef, useState } from "react";
 import LangContext from "../../context/LangContext";
-import emailjs from "@emailjs/browser";
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
   const { lang } = useContext(LangContext);
