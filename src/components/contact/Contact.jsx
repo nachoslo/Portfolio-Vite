@@ -45,7 +45,6 @@ const Contact = () => {
     if (Object.keys(validationErrors).length === 0) {
       submit.current.disabled = true;
       submit.current.value = lang.contact.form.sending;
-
       emailjs
         .sendForm(
           import.meta.env.VITE_EMAIL_SERVICE_ID,
@@ -61,10 +60,12 @@ const Contact = () => {
               submit.current.value = lang.contact.form.send;
             }, 3000);
           },
-          () => {
+          (err) => {
+            submit.current.value = "Error";
+            console.log(err)
             setTimeout(() => {
               submit.current.disabled = false;
-              submit.current.value = "Error";
+              submit.current.value = lang.contact.form.send;
             }, 3000);
           }
         );
