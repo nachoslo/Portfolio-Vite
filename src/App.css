@@ -854,7 +854,7 @@ input[type="submit"]:disabled {
   /* ******* HOME MQ ******* */
 
   #home {
-    height: 100svh;
+    overflow-y: hidden;
   }
   
   .home-content {
