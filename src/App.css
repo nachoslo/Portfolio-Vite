@@ -575,6 +575,7 @@ nav a:hover {
   width: 100%;
   height: 100%;
   background-image: var(--card-hover-bg);
+  border-radius: 18px;
   transition: opacity 0.4s ease-in-out;
 }
 
@@ -849,10 +850,6 @@ input[type="submit"]:disabled {
   }
 
   /* ******* HOME MQ ******* */
-  #home {
-    height: 100svh;
-    overflow-y: hidden;
-  }
 
   .home-content {
     flex-direction: column-reverse;
