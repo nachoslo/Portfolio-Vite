@@ -1,6 +1,6 @@
 import { useContext, useRef, useState } from "react";
 import LangContext from "../../context/LangContext";
-import emailjs from '@emailjs/browser';
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   const { lang } = useContext(LangContext);
@@ -44,7 +44,7 @@ const Contact = () => {
 
     if (Object.keys(validationErrors).length === 0) {
       submit.current.disabled = true;
-      submit.current.value = lang.contact.form.sending;
+      console.log(submit.current.textContent);
       emailjs
         .sendForm(
           import.meta.env.VITE_EMAIL_SERVICE_ID,
@@ -54,18 +54,18 @@ const Contact = () => {
         )
         .then(
           () => {
-            submit.current.value = lang.contact.form.sent;
+            submit.current.textContent = lang.contact.form.sent;
             setTimeout(() => {
               submit.current.disabled = false;
-              submit.current.value = lang.contact.form.send;
+              submit.current.textContent = lang.contact.form.send;
             }, 3000);
           },
           (err) => {
-            submit.current.value = "Error";
-            console.log(err)
+            submit.current.textContent = "Error";
+            console.log(err);
             setTimeout(() => {
               submit.current.disabled = false;
-              submit.current.value = lang.contact.form.send;
+              submit.current.textContent = lang.contact.form.send;
             }, 3000);
           }
         );
@@ -193,12 +193,9 @@ const Contact = () => {
                 <span>{lang.contact.form.messageInvalid}</span>
               ) : null}
             </div>
-            <input
-              type="submit"
-              id="button"
-              value={lang.contact.form.send}
-              ref={submit}
-            />
+            <button type="submit" id="button" ref={submit}>
+              {lang.contact.form.send}
+            </button>
           </form>
         </div>
       </div>
