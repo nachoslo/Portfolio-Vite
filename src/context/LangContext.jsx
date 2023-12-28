@@ -4,19 +4,39 @@ import es from "../assets/lang/es";
 
 const LangContext = createContext("");
 
-const initialLanguage = en;
+const getInitialLanguage = () => {
+  const localStorageLang = localStorage.getItem("lang");
+  const defaultLang = en;
+
+  if(localStorageLang === "en") {
+    return en;
+  } else if (localStorageLang === "es") {
+    return es;
+  } else {
+    return defaultLang
+  }
+}
 
 const LangProvider = ({ children }) => {
   const [showMenu, setShowMenu] = useState(false);
-  const [lang, setLang] = useState(initialLanguage);
+  const [lang, setLang] = useState(getInitialLanguage);
 
   const handleLanguage = (e) => {
-    if (e.target.value === "en") {
+    console.log(e.target.textContent);
+    if (
+      e.target.textContent === "English" ||
+      e.target.textContent === "Inglés"
+    ) {
       setLang(en);
+      localStorage.setItem("lang", "en")
     }
 
-    if (e.target.value === "es") {
+    if (
+      e.target.textContent === "Spanish" ||
+      e.target.textContent === "Español"
+    ) {
       setLang(es);
+      localStorage.setItem("lang", "es")
     }
   };
 

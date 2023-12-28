@@ -70,12 +70,12 @@ const Header = () => {
               }
             >
               <div className="menu-lang">
-                <option value="en" onClick={handleLanguage}>
+                <span onClick={handleLanguage}>
                   {lang.header.en}
-                </option>
-                <option value="es" onClick={handleLanguage}>
+                </span>
+                <span onClick={handleLanguage}>
                   {lang.header.es}
-                </option>
+                </span>
               </div>
             </div>
           </div>
