@@ -695,6 +695,7 @@ nav a:hover {
 
 .contact-form input,
 .contact-form textarea {
+  font-size: 1rem;
   font-family: "Poppins";
   color: var(--text);
   background-color: var(--form-bg);
@@ -718,6 +719,7 @@ input[type="submit"]:disabled {
 }
 
 ::placeholder {
+  font-size: .9rem;
   color: #c0c0c0;
 }
 
@@ -851,6 +853,10 @@ input[type="submit"]:disabled {
 
   /* ******* HOME MQ ******* */
 
+  #home {
+    height: 100svh;
+  }
+  
   .home-content {
     flex-direction: column-reverse;
     align-items: center;
@@ -867,6 +873,7 @@ input[type="submit"]:disabled {
     line-height: 2.5rem;
     text-align: center;
     gap: 5px;
+    text-wrap: nowrap;
   }
 
   .tech-stack {
