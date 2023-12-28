@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --border-radius: 12px;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+#Light {
+  --text: #3c3c43;
+  --primary-bg: #fff;
+  --secondary-bg: #f9f9f9;
+  --border: #3c3c431f;
+  --primary-color: #84b7ec;
+
+  /* SHADOWS */
+  --shadow-color: #00000017;
+  --box-shadow: 0 0 5px #00000036, inset 0 0 3px var(--shadow-color);
+
+  /* HEADER */
+  --lang-btn-hover: #3c3c43bf;
+  --option-lang-hover: #84b6ec21;
+  --mobile-nav-bg: #ffffffb3;
+
+  /* HOME */
+  --home-img: url(./assets/imgs/light.jpg);
+
+  /* ABOUT */
+  --about-icon-color: invert(14%) sepia(5%) saturate(876%) hue-rotate(191deg)
+    brightness(95%) contrast(86%);
+  --about-info-border: 1px solid #fff;
+
+  /* CARDS */
+  --card-bg: #f1f1f1;
+  --card-title-shadow: #00000044;
+  --card-desc: #272727cc;
+  --card-hover-bg: radial-gradient(
+      circle at 50% 0,
+      rgba(219, 123, 253, 0.4),
+      rgba(0, 0, 0, 0) 60%
+    ),
+    repeating-radial-gradient(
+      circle at 50% 0,
+      rgba(8, 144, 251, 0.25),
+      rgba(0, 0, 0, 0)
+    );
+
+  /* FORM */
+  --form-bg: #fff;
+}
+
+#Dark {
+  --text: #f9f9f9;
+  --primary-bg: #1e1e20;
+  --secondary-bg: #1a1a1d;
+  --border: #4b4b5952;
+  --primary-color: #e8ccf3;
+
+  /* SHADOWS */
+  --shadow-color: #00000070;
+  --box-shadow: 0 0 5px var(--shadow-color);
+
+  /* HEADER */
+  --lang-btn-hover: #ffffff60;
+  --option-lang-hover: #e8ccf321;
+
+  /* HOME */
+  --home-img: url(./assets/imgs/dark.jpg);
+
+  /* ABOUT */
+  --about-icon-color: invert(100%) sepia(1%) saturate(927%) hue-rotate(161deg)
+    brightness(116%) contrast(100%);
+  --about-info-border: thin solid #4b4b5952;
+
+  /* CARDS */
+  --card-bg: #252525;
+  --card-title-shadow: #ffffff44;
+  --card-desc: #f2f2f2cc;
+  --card-hover-bg: radial-gradient(
+      circle at 50% 0,
+      rgba(8, 144, 251, 0.25),
+      rgba(0, 0, 0, 0) 60%
+    ),
+    repeating-radial-gradient(
+      circle at 50% 0,
+      rgba(158, 5, 214, 0.4),
+      rgba(0, 0, 0, 0)
+    );
+
+  /* FORM */
+  --form-bg: #1a1a1d;
+}
