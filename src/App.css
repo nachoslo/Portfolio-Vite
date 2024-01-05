@@ -286,6 +286,7 @@ nav a:hover {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  text-wrap: nowrap;
 }
 
 .tech-stack h2 {
@@ -1063,6 +1064,7 @@ textarea {
 
   .tech-stack h2 {
     font-size: 1.2rem;
+    text-wrap: nowrap;
   }
 
   .about-text h2 {
