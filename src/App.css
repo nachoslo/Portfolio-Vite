@@ -328,7 +328,7 @@ nav a:hover {
 .react-logo svg {
   width: clamp(1.875rem, 1.031rem + 1.5vw, 2.625rem);
 }
-.github-logo svg {
+.github-logo svg, .mysql-logo svg {
   width: clamp(1.75rem, 0.977rem + 1.375vw, 2.438rem);
 }
 
@@ -336,7 +336,8 @@ nav a:hover {
 .css3-logo:hover,
 .javascript-logo:hover,
 .react-logo:hover,
-.github-logo:hover {
+.github-logo:hover,
+.mysql-logo:hover {
   transform: translateY(-10%);
 }
 
@@ -911,7 +912,8 @@ textarea {
   }
 
   .javascript-logo svg,
-  .react-logo svg {
+  .react-logo svg,
+  .mysql-logo svg {
     width: 25px;
     height: 25px;
   }
