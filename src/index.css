@@ -66,7 +66,7 @@ html {
   --primary-bg: #1e1e20;
   --secondary-bg: #1a1a1d;
   --border: #4b4b5952;
-  --primary-color: #e8ccf3;
+  --primary-color: #AD8B66;
 
   /* SHADOWS */
   --shadow-color: #00000070;
@@ -74,10 +74,11 @@ html {
 
   /* HEADER */
   --lang-btn-hover: #ffffff60;
-  --option-lang-hover: #e8ccf321;
+  --option-lang-hover: #AD8B6621;
 
   /* HOME */
   --home-img: url(./assets/imgs/dark.jpg);
+  --home-img: url(./assets/imgs/dark2.jpg);
 
   /* ABOUT */
   --about-icon-color: invert(100%) sepia(1%) saturate(927%) hue-rotate(161deg)
@@ -95,7 +96,7 @@ html {
     ),
     repeating-radial-gradient(
       circle at 50% 0,
-      rgba(158, 5, 214, 0.4),
+      #aa753d,
       rgba(0, 0, 0, 0)
     );
 
