@@ -77,7 +77,7 @@ html {
   --option-lang-hover: #AD8B6621;
 
   /* HOME */
-  --home-img: url(./assets/imgs/dark2.webp);
+  --home-img: url(./assets/imgs/dark.webp);
 
   /* ABOUT */
   --about-icon-color: invert(100%) sepia(1%) saturate(927%) hue-rotate(161deg)
