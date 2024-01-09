@@ -35,7 +35,7 @@ html {
   --mobile-nav-bg: #ffffffb3;
 
   /* HOME */
-  --home-img: url(./assets/imgs/light.jpg);
+  --home-img: url(./assets/imgs/light.webp);
 
   /* ABOUT */
   --about-icon-color: invert(14%) sepia(5%) saturate(876%) hue-rotate(191deg)
@@ -77,8 +77,7 @@ html {
   --option-lang-hover: #AD8B6621;
 
   /* HOME */
-  --home-img: url(./assets/imgs/dark.jpg);
-  --home-img: url(./assets/imgs/dark2.jpg);
+  --home-img: url(./assets/imgs/dark2.webp);
 
   /* ABOUT */
   --about-icon-color: invert(100%) sepia(1%) saturate(927%) hue-rotate(161deg)
